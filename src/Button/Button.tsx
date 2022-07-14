@@ -2,12 +2,10 @@ import React, { ReactNode } from 'react';
 import './Button.css';
 
 interface ButtonProps {
-    variant?: 'primary' | 'secondary' | 'tertiary'; 
+  variant?: 'primary' | 'secondary' | 'tertiary'; 
   primary?: boolean; 
   size?: 'small' | 'medium' | 'large';
-  
   children: ReactNode;
-
   onClick?: () => void;
 }
 
@@ -23,8 +21,8 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={['button', `button--${size}`, `button--${variant}`].join(' ')}
-      
+      className={
+        ['button', `button--${size}`, `button--${variant}`].join(' ')}
       {...props}
     >
       {children}

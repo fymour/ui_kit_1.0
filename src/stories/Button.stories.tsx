@@ -31,19 +31,19 @@ Tertiary.args = {
   children: 'Default',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  children: 'Default',
-};
-export const Medium = Template.bind({});
-Medium.args = {
-  size: 'medium',
-  children: 'Default',
-};
+// export const Large = Template.bind({});
+// Large.args = {
+//   size: 'large',
+//   children: 'Default',
+// };
+// export const Medium = Template.bind({});
+// Medium.args = {
+//   size: 'medium',
+//   children: 'Default',
+// };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  children: 'Defalut',
-};
+// export const Small = Template.bind({});
+// Small.args = {
+//   size: 'small',
+//   children: 'Defalut',
+// };
