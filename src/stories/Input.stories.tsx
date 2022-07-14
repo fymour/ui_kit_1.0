@@ -17,7 +17,8 @@ export const Default = Template.bind({});
 Default.args = {
     label: 'Empty',
     placeholder: 'Enter your value',
-    size:'medium'
+    size:'medium',
+    onchange
 }
 export const Small = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
