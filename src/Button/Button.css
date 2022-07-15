@@ -28,7 +28,9 @@
   }
 
   .button--disabled {
-    background-color: gray;
+    background-color: #EDEFF3;
+    border: none;
+    color: #C0C6D1;
   }
 
   .button--small {
