@@ -25,7 +25,7 @@ export const Input = ({
     id,
     label = '',
     placeholder = '',
-    disabled = false,
+    disabled = true,
     onChange,
     value,
     size = 'medium',
