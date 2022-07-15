@@ -25,12 +25,14 @@
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
     border: none;
+
   }
 
   .button--disabled {
     background-color: #EDEFF3;
     border: none;
     color: #C0C6D1;
+    border-radius: 4px;
   }
 
   .button--small {
@@ -39,12 +41,14 @@
     font-weight: 500;
     padding: 12px 25px;
     border-radius: 0px;
+    border-radius: 4px;
   }
   .button--medium {
     line-height: 20px;
     font-size: 14px;
     font-weight: 500;
     padding: 14px 25px;
+    border-radius: 4px;
     border-radius: 0px;
   }
   .button--large {
@@ -53,5 +57,6 @@
     font-weight: 500;
     padding: 16px 25px;
     border-radius: 0px;
+    border-radius: 4px;
   }
   
