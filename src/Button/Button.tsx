@@ -10,6 +10,8 @@ interface ButtonProps {
     disableStyle: string;
     hover?:boolean;
     hoverStyle: string;
+    active?: boolean; 
+    activeStyle: string;
     onClick?: () => void;
 }
 
@@ -22,26 +24,36 @@ export const Button = ({
     disableStyle,
     hover = false,
     hoverStyle,
+    active = true,
+    activeStyle,
     children,
     ...props
 }: ButtonProps) => {
     //   const mode = primary ? 'button--primary' : 'button--secondary';
 
-    if(disabled) {
-      var disableStyle = 'disabled'
-    }
+   
 
     if(hover){
       var hoverStyle = 'hover'
     }
 
+    if(active) {
+      var activeStyle = 'active'
+    }
+
+    if(disabled) {
+      var disableStyle = 'disabled'
+      hoverStyle = ''
+      activeStyle = ''
+    }
+    
     return (
     <button
       type="button"
       disabled={disabled}
       
       className={
-        ['button', `button--${size}`, `button--${variant}`, `button--${disableStyle}-${variant}`, `button--${hoverStyle}-${variant}`].join(' ')}
+        ['button', `button--${size}`, `button--${variant}`, `button--${disableStyle}-${variant}`, `button--${hoverStyle}-${variant}`, `button--${activeStyle}-${variant}`].join(' ')}
       {...props}
     >
       {children}

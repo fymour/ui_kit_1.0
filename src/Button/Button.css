@@ -36,6 +36,9 @@
     color: rgba(255, 255, 255, 0.61);
     border-radius: 4px;
   }
+  .button--disabled-primary:hover {
+    background-color: #a3bbd8;
+  }
   .button--disabled-secondary {
     background-color: transparent;
     border: 1px solid #D3D8E6 !important;
@@ -43,9 +46,12 @@
     color: #A2A9B8;
     border-radius: 4px;
   }
+  .button--disabled-secondary:hover {
+    background-color: transparent;
+    color: #A2A9B8;
+  }
   .button--hover-primary:hover{
-    background-color: #00468a;
-
+    background-color: #00468a !important;
   }
   .button--hover-secondary:hover{
     border: 1px solid #00468a;
@@ -87,7 +93,7 @@
     transition: all 0.3s;
   }
   
-  .button--primary::before, .button--primary::after {
+  .button--active-primary::before, .button--active-primary::after {
     content: '';
     position: absolute;
     transition: all 0.3s;
@@ -98,7 +104,7 @@
     z-index: 1;
   }
   
-  .button--primary::before {
+  .button--active-primary::before {
     transition: transform 0.15s, 0.15s border-radius 0.15s;
     opacity: 0;
     background:  rgba(255, 255, 255, 0.1);
@@ -106,24 +112,24 @@
     border-radius: 200px;
   }
   
-  .button--primary:active::before {
+  .button--active-primary:active::before {
     opacity: 1;
     transform: scale(1, 1);
     border-radius: 0;
   }
   
-  .button--primary::after {
+  .button--active-primary::after {
     transition: all 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .button--primary:active::after {
+  .button--active-primary:active::after {
     opacity: 0;
   }
 
 
 
-  .button--secondary::before, .button--secondary::after {
+  .button--active-secondary::before, .button--active-secondary::after {
     content: '';
     position: absolute;
     transition: all 0.3s;
@@ -134,25 +140,24 @@
     z-index: 1;
   }
   
-  .button--secondary::before {
+  .button--active-secondary::before {
     transition: transform 0.15s, 0.15s border-radius 0.15s;
     opacity: 0;
     background: rgba(24, 86, 158, 0.1);
     transform: scale(0.1, 0.1);
-    border-radius: 200px;
+    border-radius: 50%;
   }
   
-  .button--secondary:active::before {
+  .button--active-secondary:active::before {
     opacity: 1;
     transform: scale(1, 1);
     border-radius: 0;
   }
   
-  .button--secondary::after {
+  .button--active-secondary::after {
     transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .button--secondary:active::after {
+  .button--active-secondary:active::after {
     opacity: 0;
   }
