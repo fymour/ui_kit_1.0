@@ -46,6 +46,9 @@ export const Button = ({
       hoverStyle = ''
       activeStyle = ''
     }
+
+
+    // const aidar= 'aidar'
     
     return (
     <button
