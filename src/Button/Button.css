@@ -16,10 +16,10 @@
     background-color: #18569e;
   }
   .button--secondary {
-    color: #18569E;
+    color: #6b7a99;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-    border: 1px solid #18569E;
+    border: 1px solid #D3D8E6;
   }
   .button--tertiary {
     color: gray;
@@ -42,6 +42,16 @@
     box-shadow: none !important;
     color: #A2A9B8;
     border-radius: 4px;
+  }
+  .button--hover-primary:hover{
+    background-color: #00468a;
+
+  }
+  .button--hover-secondary:hover{
+    border: 1px solid #00468a;
+    color: #00468a;
+    background-color: #fff;
+    
   }
 
   .button--small {
