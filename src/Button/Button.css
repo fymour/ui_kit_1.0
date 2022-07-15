@@ -9,6 +9,7 @@
     cursor: pointer;
     display: inline-block;
     line-height: 1;
+    border-radius: 4px !important;
   }
   .button--primary {
     color: white;
@@ -28,10 +29,18 @@
 
   }
 
-  .button--disabled {
-    background-color: #EDEFF3;
-    border: none;
-    color: #C0C6D1;
+  .button--disabled-primary {
+    background-color: #a3bbd8;
+    border: none !important;
+    box-shadow: none !important;
+    color: rgba(255, 255, 255, 0.61);
+    border-radius: 4px;
+  }
+  .button--disabled-secondary {
+    background-color: transparent;
+    border: 1px solid #D3D8E6 !important;
+    box-shadow: none !important;
+    color: #A2A9B8;
     border-radius: 4px;
   }
 

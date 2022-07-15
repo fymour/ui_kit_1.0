@@ -32,7 +32,7 @@ export const Button = ({
       type="button"
       disabled={disabled}
       className={
-        ['button', `button--${size}`, `button--${variant}`, `button--${disableStyle}`].join(' ')}
+        ['button', `button--${size}`, `button--${variant}`, `button--${disableStyle}-${variant}`].join(' ')}
       {...props}
     >
       {children}
