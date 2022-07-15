@@ -78,4 +78,81 @@
     border-radius: 0px;
     border-radius: 4px;
   }
+
+
+
+
+  .button {
+    position: relative;
+    transition: all 0.3s;
+  }
   
+  .button--primary::before, .button--primary::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .button--primary::before {
+    transition: transform 0.15s, 0.15s border-radius 0.15s;
+    opacity: 0;
+    background:  rgba(255, 255, 255, 0.1);
+    transform: scale(0.1, 0.1);
+    border-radius: 200px;
+  }
+  
+  .button--primary:active::before {
+    opacity: 1;
+    transform: scale(1, 1);
+    border-radius: 0;
+  }
+  
+  .button--primary::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .button--primary:active::after {
+    opacity: 0;
+  }
+
+
+
+  .button--secondary::before, .button--secondary::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .button--secondary::before {
+    transition: transform 0.15s, 0.15s border-radius 0.15s;
+    opacity: 0;
+    background: rgba(24, 86, 158, 0.1);
+    transform: scale(0.1, 0.1);
+    border-radius: 200px;
+  }
+  
+  .button--secondary:active::before {
+    opacity: 1;
+    transform: scale(1, 1);
+    border-radius: 0;
+  }
+  
+  .button--secondary::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .button--secondary:active::after {
+    opacity: 0;
+  }
