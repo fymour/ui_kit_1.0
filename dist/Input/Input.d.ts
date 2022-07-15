@@ -1,4 +1,3 @@
-import React from 'react';
 import './input.css';
 interface InputProps {
     id: string;
@@ -8,7 +7,7 @@ interface InputProps {
     disabled?: boolean;
     success?: boolean;
     placeholder: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: (str: string) => void;
     size?: 'large' | 'medium' | 'small';
     condition?: 'disabled' | 'error';
 }
