@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import './input.css';
 interface InputProps {
     id: string;
@@ -12,5 +11,5 @@ interface InputProps {
     size?: 'large' | 'medium' | 'small';
     condition?: 'disabled' | 'error';
 }
-export declare const Input: FC<InputProps>;
+export declare const Input: ({ id, label, placeholder, disabled, success, error, onChange, value, size, ...props }: InputProps) => JSX.Element;
 export default Input;

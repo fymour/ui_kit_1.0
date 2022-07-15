@@ -24,24 +24,27 @@ export const Input = ({
     success = false,
     error = false,
     onChange,
-    value = '',
+    value ,
     size = 'medium',
     ...props
 }:InputProps) => {
+    // const [inputValue, setInputValue] = useState('');
 
+    // const handleInputChange = (event) => {
+    //   setInputValue(event.target.value);
+    // };
 
   
     return (
         <div className='input'>
             <label className='input--label'>
-                
                 {label}
             </label>
             <input 
                 id={id} 
                 className={`input--${size}`}
                 disabled={disabled}
-                onChange={event => onChange(event.target.value)}
+                onChange={e => onChange(e.target.value)}
                 value={value}
                 placeholder={placeholder} 
                 {...props}/>
