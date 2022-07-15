@@ -7,7 +7,7 @@ interface ButtonProps {
     size?: 'small' | 'medium' | 'large';
     children: ReactNode;
     disabled?: boolean;
-    disabledStyle?: 'disabled' | ' ' ;
+    disableStyle: string;
     onClick?: () => void;
 }
 
@@ -17,14 +17,14 @@ export const Button = ({
     primary = false,
     size = 'medium',
     disabled = false,
-    disabledStyle,
+    disableStyle,
     children,
     ...props
 }: ButtonProps) => {
     //   const mode = primary ? 'button--primary' : 'button--secondary';
 
     if(disabled) {
-      return disabledStyle
+      var disableStyle = 'disabled'
     }
 
     return (
@@ -32,7 +32,7 @@ export const Button = ({
       type="button"
       disabled={disabled}
       className={
-        ['button', `button--${size}`, `button--${variant}`, `button--${disabledStyle}`].join(' ')}
+        ['button', `button--${size}`, `button--${variant}`, `button--${disableStyle}`].join(' ')}
       {...props}
     >
       {children}
