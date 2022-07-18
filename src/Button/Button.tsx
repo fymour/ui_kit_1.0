@@ -54,12 +54,12 @@ export const Button = ({
     <button
       type="button"
       disabled={disabled}
-      
       className={
         ['button', `button--${size}`, `button--${variant}`, `button--${disableStyle}-${variant}`, `button--${hoverStyle}-${variant}`, `button--${activeStyle}-${variant}`].join(' ')}
       {...props}
     >
       {children}
     </button>
+    
   );
 };
