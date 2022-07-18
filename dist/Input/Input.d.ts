@@ -1,15 +1,19 @@
 import './input.css';
-interface InputProps {
-    id: string;
-    label: string;
-    value?: string;
-    error?: boolean;
+declare type AllProps = Condition & InputProps;
+declare type Condition = {
     disabled?: boolean;
     success?: boolean;
+    errors?: boolean;
+};
+declare type InputProps = {
+    id: string;
+    errorStyle: string;
+    errorMessage: string;
+    label: string;
+    value?: string;
     placeholder: string;
     onChange: (str: string) => void;
     size?: 'large' | 'medium' | 'small';
-    condition?: 'disabled' | 'error';
-}
-export declare const Input: ({ id, label, placeholder, disabled, success, error, onChange, value, size, ...props }: InputProps) => JSX.Element;
+};
+export declare const Input: ({ id, label, placeholder, disabled, errors, errorStyle, errorMessage, onChange, value, size, ...props }: AllProps) => JSX.Element;
 export default Input;

@@ -11,7 +11,7 @@ module.exports = {
         clean: true
     },
     resolve: {
-        extensions: ['.ts', '.tsx']
+        extensions: ['.ts', '.tsx', ]
     },
     externals: {
         react: 'react'
@@ -26,7 +26,16 @@ module.exports = {
                 test: /\.(ts|tsx)?$/,
                 use: ['ts-loader'],
                 exclude: /node_modules/
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif|jp2|webp)$/,
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                },
+              },
+              
+              
         ],
     }
 }

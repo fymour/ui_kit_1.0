@@ -5,7 +5,13 @@ interface ButtonProps {
     primary?: boolean;
     size?: 'small' | 'medium' | 'large';
     children: ReactNode;
+    disabled?: boolean;
+    disableStyle: string;
+    hover?: boolean;
+    hoverStyle: string;
+    active?: boolean;
+    activeStyle: string;
     onClick?: () => void;
 }
-export declare const Button: ({ variant, primary, size, children, ...props }: ButtonProps) => JSX.Element;
+export declare const Button: ({ variant, primary, size, disabled, disableStyle, hover, hoverStyle, active, activeStyle, children, ...props }: ButtonProps) => JSX.Element;
 export {};

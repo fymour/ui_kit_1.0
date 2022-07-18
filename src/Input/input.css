@@ -6,7 +6,6 @@ input:disabled{
     border:none;
 }
 ::placeholder{
-    padding: 14px 12px;
     color: #6B7A99;
 }
 
@@ -46,6 +45,9 @@ input:disabled{
 
 
 }
+input::placeholder{
+    padding: 10px;
+}
 .input--large{
     width: 280px;
     height: 48px;
@@ -64,6 +66,20 @@ input:disabled{
     border-radius: 4px;
 }
 
+.input--error::placeholder{
+    padding: 10px;
+}
+
+.input--errormsg{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 8px;
+    font-family: 'Rubik';
+    color: red;
+    align-items: flex-start;
+}
 /* .input--small::placeholder{
     padding: 6px,12px;
 }

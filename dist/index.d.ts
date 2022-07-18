@@ -1,3 +1,4 @@
 import { Button } from "./Button/Button";
 import { Input } from './Input/Input';
-export { Button, Input };
+import { Collapse } from './Collapse/Collapse';
+export { Button, Input, Collapse };
