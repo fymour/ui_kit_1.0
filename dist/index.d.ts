@@ -1,3 +1,5 @@
 import { Button } from "./Button/Button";
 import { Input } from './Input/Input';
-export { Button, Input };
+import { ScrollArea } from './ScrollArea/ScrollArea';
+import './index.css';
+export { Button, Input, ScrollArea };
